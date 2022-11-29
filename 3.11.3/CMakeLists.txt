@@ -1,0 +1,6 @@
+﻿cmake_minimum_required (VERSION 3.8)
+project ("Homework 3.11.3")
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+add_library(Leaver SHARED Leaver.h Leaver.cpp)
+add_executable(Homework_3_11_3 main.cpp)
+target_link_libraries(Homework_3_11_3 Leaver)
